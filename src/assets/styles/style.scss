@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #ffb9ce;
+}
+@mixin button {
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  padding: 3px 5px;
+  background-color: cornflowerblue;
+}
+
+.form-container {
+  width: 1200px;
+  .form {
+    display: flex;
+    gap: 15px;
+
+    .label {
+      display: flex;
+      flex-direction: column;
+
+      .input {
+        margin-top: 20px;
+        font-size: 18px;
+        height: 30px;
+        border: none;
+        background-color: #ca0395;
+        border-radius: 12px;
+      
+      }
+
+      .input:focus {
+        box-shadow: 0px 0px 20px 1px rgb(206, 9, 9);
+      
+      }
+
+      .input::placeholder {
+        text-align: center;
+        font-size: 15px;
+        letter-spacing: 3px;
+      }
+    }
+
+  }
+}
+
+.error-massage {
+  font-size: 18px;
+  color: rgb(255, 10, 10);
+ 
+}
+
+
+input[type=submit] {
+  height: 20px;
+  width: 120px;
+  margin-top: 25px;
+  margin-left: 30px;
+  font-size: 12px;
+  letter-spacing: 3px;
+  padding: 5px;
+ border-radius: 30px;
+  border: none;
+  background-color: #e311ab;
+}
+
+input[type=submit]:hover {
+  color: #f3f3f3;
+  background-color: rgb(255, 0, 0);
+  cursor: pointer;
+}
+
+.table {
+  margin-top: 15px;
+  border: 1px solid rgb(247, 14, 72);
+  font-size: 18px;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  .thstyle {
+    border: 3px solid rgb(255, 0, 93);
+    padding: 8px;
+    background-color: #fa42c0;
+    
+    height: 50px;
+  }
+  .tdStyle {
+    border: 2px solid rgb(116, 2, 2);
+    padding: 8px;
+  }
+  .tButtons {
+    display: flex;
+    justify-content: space-evenly;
+    // .view {
+    //   @include button
+      
+    // }
+    // .update {
+    //   @include button
+    
+    // }
+    // .delete {
+    //   @include button;
+    //   background-color: brown;
+    // }
+    .view:hover, .delete:hover, .update:hover {
+      cursor: pointer;
+      color: #f3f3f3;
+      background-color: rgb(9, 9, 9);
+    }
+  }
+}
+
+.login-page {
+  background-color: #ff00b3;
+  width: 500px;
+  height: 500px;
+ 
+  flex-direction: column;
+  gap: 25px;
+  text-align: center;
+  margin: 100px auto;
+
+ 
+
+  h2 {
+    font-size: 40px;
+    margin-top: 40px;
+    color: rgb(9, 238, 40);
+  }
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    width: 400px;
+    margin-left: 40px;
+
+
+    .login-input {
+      color: #030000;
+      width: 250px;
+      height: 35px;
+      padding: 15px;
+      font-size: 20px;
+    
+      
+      border-bottom: 2px solid #383636;
+     
+   
+     }
+    
+    
+
+    .login-submit:hover {
+      color: #65e8fa;
+    }
+  }
+}
+
+.login-page:hover {
+  box-shadow: 0px 0px 20px 4px rgb(121, 3, 3);
+  transition: all ease 400ms;
+  h2 {
+    color: #5c2af2;
+    transition: color ease-in 400ms;
+  }
+}
+
+.moreInfo {
+  width: 600px;
+  height: 600px;
+  background-color: #ff0191;
+  margin-bottom: 12px;
+  margin-left: 380px;
+  margin-top:30px ;
+  padding: 25px;
+  color: #f3f3f3;
+  border-radius: 50px;
+  font-size: 13px;
+
+  
+  .info {
+    display: flex;
+    gap: 150px;
+    .img-container {
+      width: 250px;
+      height: 250px;
+      img {
+        width: 100%;
+        overflow: hidden;
+      }
+    }
+    .personal-info {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      font-size: 18px;
+      letter-spacing: 3px;
+
+      span {
+        font-size: 20px;
+        font-weight: bold;
+        margin-right: 25px;
+        letter-spacing: 4px;
+      }
+      p {
+        margin-left: 5px;
+        text-transform: capitalize;
+      }
+    }
+  }
+  .more-info-button {
+   width: 100px;
+    height: 35px;
+    border-radius:5px;
+    border: none;
+    font-size: 15px;
+    letter-spacing: 4px;
+    font-weight: 600;
+  }
+  .more-info-button:hover {
+    color: white;
+    background-color: rgb(255, 6, 6);
+    cursor: pointer;
+  }
+}
+
+.noPage {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 40px;
+}
+
