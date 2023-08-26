@@ -36,6 +36,10 @@ export const MoreInfo = () => {
                         <span>Email:</span>
                         <p>{current.Email}</p>
                     </div>
+                    <div>
+                        <span>Gmail:</span>
+                        <p>{current.Gmail}</p>
+                    </div>
                     <Button className={'more-info-button'} text={'user list'} onClick={() => navigate('/home')}/>
                 </div>
 
